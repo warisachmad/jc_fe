@@ -1,0 +1,62 @@
+html{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: 'Chewy', cursive;
+    font-size: 12px;
+}
+
+body{
+    background-color: #c0c5ce;
+}
+
+.myClassParent{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 50px solid red;
+    z-index: 1000;
+}
+
+.myClass{
+    border-left-style: solid;
+    border-left-width: 50px;
+    border-color: #ffffff;
+    background-color: aquamarine;
+
+    margin: 20px;
+    padding-left: 50px;
+    /*padding: 0px 0px 0px 5px;   sama saja seperti padding-left (urutannya searah jarum jam)*/
+
+    height: 100px;
+    width: 50%;
+    /*max-height: 200px;  maka yang tercetak 100px, tetapi bila heightnya diatas 200px maka yang tercetak 200px*/
+    /*jenis satuan (px, %, em) dan 1em = 12px*/
+
+    outline-style: solid;
+    outline-width: 10px;
+
+    text-align: center;
+    text-transform: uppercase;  /*membuat huruf text menjadi kapital semua*/
+    letter-spacing: 10px;
+    line-height: 2;
+    word-spacing: 20px; 
+
+    /*position: fixed;
+    top: 0;*/
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.menu{
+    background-color: aquamarine;
+}
+
+.menu li{
+    display: inline;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+}
