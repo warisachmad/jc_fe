@@ -24,8 +24,8 @@ body{
     display: inline;
 }
 
-.menu ul li :hover{
-    background-color: grey;
+.menu ul li :hover{     /*hover berfungsi untuk melakukan suatu tindakan sesuai perintah saat setiap disentuh*/
+    background-color: grey; /*warna background menu akan berubah menjadi abu-abu saat menu disentuh*/
 }
 
 .menu ul li a{
@@ -38,16 +38,15 @@ body{
 
 #body{
     background-color: white;
-    /*column-count: 3;*/
+    /*column-count: 3;*/    /*membuat 3 buah kolom*/
 }
 
-#footer{
-    text-align: right;
-    font-size: 0.75em;
+.warna{
+    color: orange;
 }
 
 .flexcontainer{
-    display: flex;
+    display: flex;  /*flex membuat 3 posisi kolom menyamping*/
 }
 
 .flexitem{
@@ -55,8 +54,15 @@ body{
     background-color: grey;
     width: 300px;
     height: 300px;
+    /*transform: rotate(45deg);*/   /*bila rotate di dalam .fixitem maka kemiringan posisi kotak akan tetap sesuai 
+                                      derajat yang ditentukan dan tidak bergerak saat di hover*/
 }
 
-.flexitem:hover{
-    transform: rotate(45deg);
+.flexitem:hover{    /*hover berfungsi untuk melakukan suatu tindakan sesuai perintah saat setiap disentuh*/
+    transform: rotate(45deg);   /*rotate membuat kemiringan posisi kotak sesuai derajat*/
+}                               /*kolom akan berputar 45 derajat saat kolom disentuh*/
+
+#footer{
+    text-align: right;
+    font-size: 0.75em;
 }
